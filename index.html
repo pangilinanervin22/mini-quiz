@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="https://cdn-icons.flaticon.com/png/512/5726/premium/5726702.png?token=exp=1643213487~hmac=01ed99d3031c2cb18ce915a37f933b54"
+			type="image/x-icon"
+		/>
+		<title>Mini Quiz</title>
+		<link rel="stylesheet" href="quiz.css" />
+	</head>
+	<body>
+		<section id="quiz">
+			<header>
+				<div id="quiz_score">1</div>
+				<div id="question"></div>
+			</header>
+
+			<ol id="choices"></ol>
+		</section>
+
+		<section id="modal_overlay" class="hide">
+			<div class="modal_content">
+				<h1 id="modal_message"></h1>
+				<button id="modal_button">try again</button>
+			</div>
+		</section>
+
+		<script type="module" src="./javascript/quiz.js"></script>
+	</body>
+</html>

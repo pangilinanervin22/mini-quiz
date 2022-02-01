@@ -9,8 +9,7 @@ html {
 	border: 0;
 	padding: 0;
 	margin: 0;
-	font-weight: 500;
-	color: white;
+	font-weight: 700;
 }
 
 body {
@@ -18,18 +17,18 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #000000e6;
 	height: 100vh;
 	width: 100vw;
+	background: rgba(0, 0, 0, 0.9);
 }
 
 #quiz {
-	font-size: 2.2rem;
-	background: dodgerblue;
-	padding: 0.5rem 1rem;
 	width: 560px;
-	height: 80vh;
+	height: 80%;
+	padding: 0.5rem 1rem;
 	border-radius: 1rem;
+	font-size: 2.4rem;
+	background: rgb(248, 221, 60);
 }
 
 header {
@@ -37,9 +36,9 @@ header {
 }
 
 #question {
+	text-align: center;
 	font-weight: bold;
 	margin-inline: 3rem;
-	text-align: center;
 }
 
 #quiz_score {
@@ -51,59 +50,52 @@ header {
 	flex-direction: column;
 	align-items: center;
 	margin: 0;
-	list-style: none;
 	margin-top: 5%;
 	gap: 1.5rem;
+	list-style: none;
 }
 
 .choice {
-	border: 1px solid wheat;
 	width: 60%;
-	text-align: center;
-	color: dodgerblue;
-	background: rgb(255, 253, 253);
 	padding: 1rem;
+	text-align: center;
 	border-radius: 1.5rem;
 	transition: all 0.2s;
+	border: 1px solid white;
+	color: rgba(0, 0, 0, 0.9);
+	background: rgba(255, 253, 253, 0.95);
 }
 
-.choice_click {
-	background: whitesmoke;
-	color: dodgerblue;
-	border: none;
+.choice:hover {
+	box-shadow: 0 0 1rem gray;
 	box-shadow: 0 0 1rem gray;
 	transform: scale(1.05);
 	z-index: 1;
 }
 
-.choice:active {
-	opacity: 0.8;
-}
-
 .correct {
+	border: 1px solid white;
 	color: whitesmoke;
 	background: rgba(2, 155, 1, 0.8);
 }
 
 .wrong {
+	border: 1px solid white;
 	color: whitesmoke;
-
-	background: rgba(255, 0, 0, 0.7);
+	background: rgba(255, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 680px) {
 	#quiz {
-		font-size: 1.8rem;
-		width: 90vw;
-		height: 75vh;
 		position: relative;
-		background: dodgerblue;
-		padding-inline: 1rem;
-		border-radius: 1rem;
+		width: 90vw;
+		height: 60%;
+		padding: 0.5rem;
+		font-size: 2rem;
 	}
 
 	header {
-		font-size: 2.4 rem;
+		font-size: 2.2rem;
 	}
 }
 
@@ -112,16 +104,15 @@ header {
 /* modal system */
 #modal_overlay,
 #modal_loading {
-	font-size: 3rem;
-
+	z-index: 1;
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
 	height: 100vh;
+	font-size: 3rem;
 	background: rgba(15, 147, 255, 0.3);
-	position: absolute;
-	z-index: 1;
 }
 
 .modal_content {
@@ -129,12 +120,13 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: rgba(46, 46, 46);
-	color: black;
+	text-align: center;
 	width: 460px;
 	height: 260px;
-	text-align: center;
+	border-radius: 3px;
 	font-size: 3rem;
+	background: rgba(0, 0, 0, 0.95);
+	color: white;
 }
 
 #modal_button {

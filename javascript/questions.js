@@ -116,7 +116,7 @@ const arrayOfQuestions = [
 		choices: ["ICT", "CIA", "CCT", "TCI"],
 	},
 	{
-		question: "Google is a example of ________.",
+		question: "Google is a example of ____________.",
 		answer: "Search engine",
 		choices: ["Search engine", "Cryptocurrency", "Operating system", "Internet"],
 	},

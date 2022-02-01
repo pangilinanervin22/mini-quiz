@@ -48,12 +48,6 @@ function setClickQuestion() {
 			if (isDisable) return;
 			isDisable = true;
 
-			//smooth animation
-			item.classList.toggle("choice_click");
-			setTimeout(() => {
-				item.classList.toggle("choice_click");
-			}, 250);
-
 			//handle correction
 			if (item.textContent === mainQuestions[currentIndex].answer) {
 				item.classList.add("correct");

@@ -112,7 +112,7 @@ header {
 	width: 100vw;
 	height: 100vh;
 	font-size: 3rem;
-	background: rgba(15, 147, 255, 0.3);
+	background: rgba(9, 47, 78, 0.3);
 }
 
 .modal_content {
@@ -134,16 +134,13 @@ header {
 	margin: 1rem;
 	padding: 0.5rem 2rem;
 	border-radius: 2rem;
-	background: darkgoldenrod;
-	transition: transform 0.5s, box-shadow 0s;
+	background: rgb(248, 221, 60);
+	transition: transform 0.1s, box-shadow 0s;
 }
 
-.modal_button:hover {
+#modal_button:hover {
 	transform: scale(1.05);
-}
-
-.modal_button:active {
-	box-shadow: 0 0 10px gray;
+	box-shadow: 0 0 5px gray;
 }
 
 .disable {

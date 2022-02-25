@@ -70,6 +70,7 @@ header {
 	box-shadow: 0 0 1rem gray;
 	box-shadow: 0 0 1rem gray;
 	transform: scale(1.05);
+	cursor: pointer;
 	z-index: 1;
 }
 
